@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <conio.h>
+
+main () {
+
+float nota1, nota2, nota3, media;
+char nome[50];
+
+printf("digite o nome do aluno: ");
+fgets(nome, sizeof(nome), stdin);
+
+printf("ola, %s", nome);
+
+printf("digite a sua primeira nota: ");
+scanf("%f", &nota1);
+
+printf("digite a sua segunda nota: ");
+scanf("%f", &nota2);
+
+printf("digite a sua terceira nota: ");
+scanf("%f", &nota3);
+
+media = (nota1 + nota2 + nota3) / 3;
+printf("sua media e: %f \n", media);
+
+if (media >= 7)
+    printf("voce foi aprovado");
+
+else if (media <= 5)
+    printf("voce foi reprovado");
+
+else
+    printf("voce esta de recuperacao");
+    
+}
