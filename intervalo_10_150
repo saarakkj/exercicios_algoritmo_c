@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <locale.h>
+#include <conio.h>
+
+main () {
+
+ int n, qtde=0, vezes;
+
+ setlocale(LC_ALL, "portuguese");
+ for(vezes=0; vezes<3; vezes++) {
+
+ printf("Informe o %2d° numero: ", vezes+1);
+ scanf("%d", &n);
+
+ if (n >= 10 && n <= 150)
+    qtde++;
+ }
+
+ printf("\n Foram lidos %2d numeros que estao no intervalo entre 10 e 150", qtde);
+ getch();
+
+}
