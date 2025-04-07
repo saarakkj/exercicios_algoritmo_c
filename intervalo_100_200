@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+
+main () {
+
+int valor;
+
+printf("escreva um numero inteiro: ");
+scanf("%i", &valor);
+
+if (valor <= 100)
+    printf("o numero nao esta entre 100 e 200");
+
+else if(valor >= 200)
+    printf("o numero nao esta entre 100 e 200");
+
+else
+    printf("o numero esta entre 100 e 200");
+
+}
