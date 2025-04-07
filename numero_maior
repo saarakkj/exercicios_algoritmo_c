@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <conio.h>
+
+main () {
+
+int valor1, valor2;
+
+printf("Escreva o primeiro numero inteiro: ");
+scanf("%d", &valor1);
+printf("Escreva o segundo numero inteiro: ");
+scanf("%d", &valor2);
+
+if (valor1 > valor2)
+    printf("o primeiro valor eh maior que o segundo");
+else
+    printf("o segundo valor eh maior que o primeiro");
+
+}
