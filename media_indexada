@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+
+main(){
+    int A[10], B[10], i;
+    float C[10];
+    printf("Digite os elementos do conjunto A:");
+    for(i=0;i<10;i++){
+       scanf("%d",&A[i]);
+    }
+    printf("Digite os elementos do conjunto B:");
+    for(i=0;i<10;i++){
+        scanf("%d",&B[i]);
+    }
+    for(i=0;i<10;i++){
+        C[i]=(A[i]+B[i])/2.0;
+    }
+    printf("\nConjunto C (médias):\n");
+    for (i = 0; i < 10; i++) {
+        printf("C[%d] = %.2f\n", i + 1, C[i]);
+    }
+
+    return 0;
+}
